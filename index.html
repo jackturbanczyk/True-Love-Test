@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mainpage.css">
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Love Compatibility Test</title>
+</head>
+<body>
+    <div class="instructions-box">
+        <p>Welcome to the True Love Compatibility Test! Please follow these steps to see how compatible you are with me:</p>
+        <p>Read each statement carefully. You will get a score at the end.<br>
+        Select a response from the dropdown for each statement, ranging from <strong>Strongly Disagree</strong> to <strong>Strongly Agree.</strong><br>
+        Once you have answered all five questions, click "Calculate Compatibility" to see your score, and how compatible you are with me!</p>
+    </div>
+    <div class="container">
+        <h2>True Love Compatibility Test</h2>
+        
+        <form id="loveForm">
+            <label for="question1">1. Penut butter is gross</label>
+            <select id="question1" required>
+                <option value="">Select...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+
+            <label for="question2">2. Taylor Swift is not a good artist</label>
+            <select id="question2" required>
+                <option value="">Select...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+
+            <label for="question3">3. Smoking is gross and bad for you</label>
+            <select id="question3" required>
+                <option value="">Select...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+
+            <label for="question4">4. My health is important to me </label>
+            <select id="question4" required>
+                <option value="">Select...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+
+            <label for="question5">5. I am empathetic towards animals</label>
+            <select id="question5" required>
+                <option value="">Select...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+
+            <button type="button" onclick="calculateCompatibility()">Calculate Compatibility</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+<div class="explanation">
+    <p>How compatible are you with me?</p>
+    <P>If you scored <strong>60%</strong> or under we shouldn't be friends.
+    If you scored <strong>60%</strong> to <strong>80%</strong> then would should be friends. 
+    Now if you scored <strong>80%</strong> or higher
+    lets go out to get food sometime.
+    </P>
+
+</div>
+    </body>
+    </html>
